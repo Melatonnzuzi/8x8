@@ -514,6 +514,23 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
     <div class="bg_bottom w-100 position-absolute bottom-0 start-0 end-0"></div>
 </section>	
 
+
+	<style>
+    /* This makes the wrapper div react when you hover over it */
+    .my-floating-chat {
+        position: fixed; 
+        bottom: 20px; 
+        right: 20px; 
+        z-index: 9999;
+        transition: transform 0.3s ease; /* Smooth animation */
+    }
+
+    /* This triggers when the mouse is over the container */
+    .my-floating-chat:hover {
+        transform: scale(1.1) translateY(-5px); /* Makes it slightly bigger and moves it up */
+        cursor: pointer;
+    }
+	</style>
 	<div style="position: fixed; bottom: 20px; right: 20px; z-index: 9999;">
 	<!-- Place this code snippet anywhere you want the button to appear in your page. If no button has been configured in the chat script, it will not show up nor take any space. -->
     <div id="__8x8-chat-button-container-script_9022317066564a6e1634b06.78407016"></div>
