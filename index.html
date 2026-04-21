@@ -1794,6 +1794,10 @@ document.addEventListener("cmplz_fire_categories", function (e) {
             domain: "https://vcc-eu8.8x8.com",
             buttonContainerId: "__8x8-chat-button-container-script_9022317066564a6e1634b06.78407016",
             align: "right",
+
+			onInit: function(bus) {
+            bus.publish("chat:set-language", "fr");
+        }
         };
 
         var url = new URL("https://cloud8-cc-geo.8x8.com/vcc-chat-channels/public/webchat/discovery");
@@ -1827,10 +1831,6 @@ document.addEventListener("cmplz_fire_categories", function (e) {
             os.parentNode.insertBefore(se, os);
         }
     })();
-		onInit: function(bus) {
-            bus.publish("chat:set-language", "fr");
-        }
-    };
     </script>
 	</body>
 </html>
