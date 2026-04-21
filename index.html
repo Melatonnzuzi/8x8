@@ -1827,6 +1827,10 @@ document.addEventListener("cmplz_fire_categories", function (e) {
             os.parentNode.insertBefore(se, os);
         }
     })();
+		onInit: function(bus) {
+            bus.publish("chat:set-language", "fr");
+        }
+    };
     </script>
 	</body>
 </html>
